@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,200&display=swap');
+
+:root {
+  --color-bg: #F5F5F5;
+}
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0; 
+  background-color: var(--color-bg);
+}
+
+h1{
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 78.94px;
+  color: #282828;
+}
+
+p{
+  font-weight: 100;
+  size: 30px;
+  color: #282828;
+  line-height: 34px;
+}
+
+li { list-style: none; }
+
+.partone{
+  min-height: 856px;
+}
+
+header{
+  height: 69px;
+  border-bottom1px solid seashell;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+}
+
+header li {
+  margin-top: 35%;
+  margin-right: 35%;
+  font-weight: 100;
+  justify-content: flex-start;
+  
+  a{
+    color: black;
+  }
+
+}
+
+.logo{
+  height: 50px;
+  margin-left: 25px;
+  margin-top: 20%;
+}
+
+.menu {
+  display: flex;
+  color: grey;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-end;
+    justify-content: flex-start;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+    font-weight: 400;
+}
+
+.menu li { margin-right: 30px; }
+
+.headlines__intro {
+  font-size: 69px;
+  font-weight: 400;
+  line-height: 79px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 145px;
+  margin-left: 70px;
+  width:773px;
+}
+
+// PART 2
+
+.parttwo,
+.parthree,
+.partfour {
+  min-height: 791.58px;
+  padding: 165px 75px;
+}
+
+.projects__title,
+.contentCreation__title{
+  padding: 15% 8%;
+  width: 100%;
+  font-weight: 400;
+  font-size: 45.0633px;
+  line-height: 52px;
+  position: relative;
+}
+
+.projects__line,
+.contentCreation__line{
+  width: 400px; 
+  height: 2px;
+  background-color: black;
+  position: absolute;
+}
+
+.projects__container{
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.project__item{
+  width: calc(33% - 10px);
+  margin-bottom: 20px;
+}
+.project__itemTitle{
+    position: relative;
+    top: 94%;
+    background: transparent;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+
+.project__itemMedia {
+  height: 600px; /* set a fixed height for the image container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__itemMedia img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  height: 100%;
+  object-fit: cover; /* set object-fit to cover */
+}
+
+//PART 3
+.contentCreation {
+  padding: 10% 10%;
+}
+.contentCreation__item{
+  width: calc(45% - 20px);
+}
+
+.contentCreation__description{
+  width: 80%;
+
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  padding: 5% 17%
+}
+
+.contentCreation__description p{
+  text-transform: underline;
+  padding-top: 10%;
+}
+
+.contentCreation__itemMedia {
+  transform: rotate(8deg);
+  height: 445px; /* set a fixed height for the image container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentCreation__itemMedia img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+//PART 4
+
+.aboutme {
+
+}
+
+.aboutme__container {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.aboutme__item{
+  width: calc(40% - 10px);
+    margin-bottom: 20px;
+}
+
+.aboutme__description{
+  padding: 0 0 0 9%;
+}
+
+/* Styles for page */ 
+.container{ width: 70%; margin:150px auto;
+}
+$lightgrey: #dddddd;
+$textcolor:#4B4B4B;
+
+.aboutme__toggleList{
+  color: $textcolor;font-family: sans-serif; 
+}
+.aboutme__toggleList a{ 
+      cursor:pointer; 
+      color: $textcolor;
+      text-decoration:none;
+}
+.aboutme__toggleList section{
+      margin-bottom:90px;
+}
+.aboutme__toggleList h1{
+        text-transform:uppercase;
+        text-align:center;
+        font-weight:normal;
+        letter-spacing:10px;
+        font-size:25px;
+        line-height:1.5;
+}
+.aboutme__toggleList p, a { 
+        text-align:center;
+        letter-spacing:3px;
+}
+
+.aboutme__toggleList p{
+      font-weight:200;
+      line-height:1.5;
+      font-size:14px;
+}
+/* Styles for Accordion */ 
+
+.toggle .toggle-title{
+            border-bottom: 1px solid $lightgrey;
+}
+.toggle .toggle-title {
+            position: relative;
+            display: block;
+            border-top: 1px solid $lightgrey;
+            margin-bottom: 6px;   
+}
+.toggle .toggle-title h3 {
+            font-size: 20px;
+            margin: 0px;
+            line-height: 1;
+            cursor: pointer;
+            font-weight:200;
+}
+.toggle-title h3.active h3 {}
+
+.toggle-inner {
+padding: 7px 25px 10px 25px;
+display: none;
+margin: -7px 0 6px;}
+
+.toggle-inner div {
+max-width: 100%;}
+
+.toggle-title, .title-name {
+  display: block;
+  padding: 25px 25px 14px;
+}
+.toggle a i {
+font-size: 22px;
+margin-right: 5px;
+}
+.toggle i {
+position: absolute;
+background: url('http://arielbeninca.com/Storage/plus_minus.png') 0px -24px no-repeat;
+width: 24px;
+height: 24px;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+transition: all 0.3s ease;
+margin: 20px;
+right: 0;
+}
+.toggle i .active i {
+background: url('http://arielbeninca.com/Storage/plus_minus.png') 0px 0px no-repeat;
+}
+
