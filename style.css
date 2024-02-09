@@ -107,7 +107,7 @@ ul li a{
 
 .projects__line,
 .contentCreation__line{
-  width: 400px; 
+  width: 60px; 
   height: 2px;
   background-color: black;
   position: absolute;
