@@ -205,8 +205,11 @@ ul li a{
 }
 
 .aboutme__item{
-  width: calc(40% - 10px);
     margin-bottom: 20px;
+}
+
+.aboutme__title{
+  margin-bottom: 20px;
 }
 
 .aboutme__description{
@@ -218,86 +221,4 @@ ul li a{
 }
 $lightgrey: #dddddd;
 $textcolor:#4B4B4B;
-
-.aboutme__toggleList{
-  color: $textcolor;font-family: sans-serif; 
-}
-.aboutme__toggleList a{ 
-      cursor:pointer; 
-      color: $textcolor;
-      text-decoration:none;
-}
-.aboutme__toggleList section{
-      margin-bottom:90px;
-}
-.aboutme__toggleList h1{
-        text-transform:uppercase;
-        text-align:center;
-        font-weight:normal;
-        letter-spacing:10px;
-        font-size:25px;
-        line-height:1.5;
-}
-.aboutme__toggleList p, a { 
-        text-align:center;
-        letter-spacing:3px;
-}
-
-.aboutme__toggleList p{
-      font-weight:200;
-      line-height:1.5;
-      font-size:14px;
-}
-/* Styles for Accordion */ 
-
-.toggle .toggle-title{
-            border-bottom: 1px solid $lightgrey;
-}
-.toggle .toggle-title {
-            position: relative;
-            display: block;
-            border-top: 1px solid $lightgrey;
-            margin-bottom: 6px;   
-}
-.toggle .toggle-title h3 {
-            font-size: 20px;
-            margin: 0px;
-            line-height: 1;
-            cursor: pointer;
-            font-weight:200;
-}
-.toggle-title h3.active h3 {}
-
-.toggle-inner {
-padding: 7px 25px 10px 25px;
-display: none;
-margin: -7px 0 6px;}
-
-.toggle-inner div {
-max-width: 100%;}
-
-.toggle-title, .title-name {
-  display: block;
-  padding: 25px 25px 14px;
-}
-.toggle a i {
-font-size: 22px;
-margin-right: 5px;
-}
-.toggle i {
-position: absolute;
-background: url('http://arielbeninca.com/Storage/plus_minus.png') 0px -24px no-repeat;
-width: 24px;
-height: 24px;
--webkit-transition: all 0.3s ease;
--moz-transition: all 0.3s ease;
--o-transition: all 0.3s ease;
--ms-transition: all 0.3s ease;
-transition: all 0.3s ease;
-margin: 20px;
-right: 0;
-}
-.toggle i .active i {
-background: url('http://arielbeninca.com/Storage/plus_minus.png') 0px 0px no-repeat;
-}
 
