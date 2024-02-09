@@ -113,6 +113,10 @@ ul li a{
   position: absolute;
 }
 
+.projects__paragraph{
+  margin-inline: 10%;
+}
+
 .projects__container{
 
   display: flex;
@@ -175,7 +179,6 @@ ul li a{
 }
 
 .contentCreation__itemMedia {
-  transform: rotate(8deg);
   height: 445px; /* set a fixed height for the image container */
   display: flex;
   justify-content: center;
