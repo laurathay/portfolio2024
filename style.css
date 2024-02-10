@@ -158,7 +158,6 @@ ul li a{
   padding: 10% 10%;
 }
 .contentCreation__item{
-  width: calc(45% - 20px);
 }
 
 .contentCreation__description{
@@ -179,7 +178,6 @@ ul li a{
 }
 
 .contentCreation__itemMedia {
-  height: 445px; /* set a fixed height for the image container */
   display: flex;
   justify-content: center;
   align-items: center;
