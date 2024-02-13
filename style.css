@@ -95,15 +95,40 @@ ul li a{
   padding: 165px 75px;
 }
 
-.projects__title,
-.contentCreation__title{
+.projects__title .contentCreation__titleUnderline,
+.contentCreation__title .contentCreation__titleUnderline {
+    /* This is important so the pseudo element can be place relative to the contentCreation__titleUnderline element */
+    position: relative;
+    /* Need to set a z-index so the pseudo element has an index to place against */
+    z-index: 1;
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+.projects__title .contentCreation__titleUnderline,
+.contentCreation__title .contentCreation__titleUnderline::after {
+    position: absolute;
+    content: '';
+    /* Change the bottom value to move the underline element */
+    bottom: 0;
+    width: 100%;
+    /* change the height to what you want */
+    height: 15px;
+    background: blue;
+    display: block;
+    /* move the pseudo element behind the it's span parent */
+    z-index: -1;
+}
+
+{
   padding: 15% 8%;
   width: 100%;
   font-weight: 400;
   font-size: 45.0633px;
   line-height: 52px;
   position: relative;
-
+  background-image: linear-gradient(transparent calc(100% - 0.45em),var(--darkpink) 0),linear-gradient(transparent calc(100% - 0.45em),var(--lightblue) 0);
   background-image: linear-gradient(transparent calc(100% - 0.45em),var(--darkpink) 0),linear-gradient(transparent calc(100% - 0.45em),var(--lightblue) 0);
 }
 
@@ -148,6 +173,7 @@ ul li a{
 }
 
 .project__itemMedia img{
+  padding top : 25px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -159,8 +185,6 @@ ul li a{
 //PART 3
 .contentCreation {
   padding: 10% 10%;
-}
-.contentCreation__item{
 }
 
 .contentCreation__description{
@@ -179,7 +203,7 @@ ul li a{
 
 .contentCreation__itemMedia img {
   height: 100%;
-  width: 100%;
+  width: 80%;
   object-fit: cover;
   border-radius: 5px;
 }
