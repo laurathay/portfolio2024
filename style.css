@@ -171,11 +171,6 @@ ul li a{
   text-align: left;
 }
 
-.contentCreation__description p{
-  text-transform: underline;
-  padding-top: 10%;
-}
-
 .contentCreation__itemMedia {
   display: flex;
   justify-content: center;
