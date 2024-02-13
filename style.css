@@ -103,11 +103,13 @@ ul li a{
   font-size: 45.0633px;
   line-height: 52px;
   position: relative;
+
+  background-image: linear-gradient(transparent calc(100% - 0.45em),var(--darkpink) 0),linear-gradient(transparent calc(100% - 0.45em),var(--lightblue) 0);
 }
 
 .projects__line,
 .contentCreation__line{
-  width: 60px; 
+  width: 120px; 
   height: 2px;
   background-color: black;
   position: absolute;
