@@ -121,7 +121,17 @@ ul li a{
     z-index: -1;
 }
 
-{
+.projects__title, 
+.contentCreation__titleUnderline {
+  color: black;
+  padding: 15% 8%;
+  width: 100%;
+  font-weight: 400;
+  font-size: 45.0633px;
+  line-height: 52px;
+  position: relative;
+}
+/* {
   padding: 15% 8%;
   width: 100%;
   font-weight: 400;
@@ -130,7 +140,7 @@ ul li a{
   position: relative;
   background-image: linear-gradient(transparent calc(100% - 0.45em),var(--darkpink) 0),linear-gradient(transparent calc(100% - 0.45em),var(--lightblue) 0);
   background-image: linear-gradient(transparent calc(100% - 0.45em),var(--darkpink) 0),linear-gradient(transparent calc(100% - 0.45em),var(--lightblue) 0);
-}
+} */
 
 .projects__line,
 .contentCreation__line{
