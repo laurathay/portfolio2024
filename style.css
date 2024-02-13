@@ -97,6 +97,16 @@ ul li a{
   margin-bottom: 50px;
 }
 
+.underline {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, transparent 0%, transparent 55%, rgba(21,101,192,1) 55%, rgba(21,101,192,1) 100%);
+  background-position: bottom;
+  background-size: 100%;
+  color: white;
+  background-repeat: no-repeat;
+  font-size: 50px;
+  }
+
 .projects__title .contentCreation__titleUnderline,
 .contentCreation__title .contentCreation__titleUnderline {
     /* This is important so the pseudo element can be place relative to the contentCreation__titleUnderline element */
