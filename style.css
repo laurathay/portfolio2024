@@ -101,8 +101,8 @@ ul li a{
 
 .underline {
   background: rgb(255,255,255);
-  background: linear-gradient(180deg, transparent 0%, transparent 55%, rgba(21,101,192,1) 55%, rgba(21,101,192,1) 100%);
-  background-position: bottom;
+  background: linear-gradient(180deg, transparent 0%, transparent 55%, #f28482 55%, rgba(21300,130,1) 100%);
+
   background-size: 100%;
   color: white;
   background-repeat: no-repeat;
