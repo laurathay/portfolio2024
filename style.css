@@ -107,24 +107,6 @@ ul li a{
   font-size: 50px;
   }
 
-.projects__title, 
-.contentCreation__titleUnderline {
-  color: black;
-  padding: 15% 8%;
-  width: 100%;
-  font-weight: 400;
-  font-size: 45.0633px;
-  line-height: 52px;
-  position: relative;
-}
-
-.projects__line,
-.contentCreation__line{
-  width: 120px; 
-  height: 2px;
-  background-color: black;
-  position: absolute;
-}
 
 .projects__paragraph, 
 .contentCreation__description{
