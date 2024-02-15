@@ -87,6 +87,18 @@ ul li a{
   width:773px;
 }
 
+//PART ONE BIS
+
+.trailer__title {
+  margin-bottom: 25px;
+}
+
+.trailer__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // PART 2
 
 .parttwo,
@@ -95,7 +107,7 @@ ul li a{
   min-height: 791.58px;
   padding: 165px 75px;
   margin-bottom: 50px;
-  margin-top: 15em;
+  margin-top: 100px;
   margin-left: 2em;
 }
 
