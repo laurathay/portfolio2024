@@ -224,6 +224,8 @@ $textcolor:#4B4B4B;
 }
 
 .trailer__media {
+  padding-top: 100px;
+
   display: flex;
   justify-content: center;
   align-items: center;
