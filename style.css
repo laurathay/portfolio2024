@@ -87,23 +87,12 @@ ul li a{
   width:773px;
 }
 
-//PART ONE BIS
-
-.trailer__title {
-  margin-bottom: 25px;
-}
-
-.trailer__media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 // PART 2
 
 .parttwo,
 .parthree,
-.partfour {
+.partfour,
+.partfive {
   min-height: 791.58px;
   padding: 165px 75px;
   margin-bottom: 50px;
@@ -220,3 +209,14 @@ ul li a{
 $lightgrey: #dddddd;
 $textcolor:#4B4B4B;
 
+//PART FIVE
+
+.trailer__title {
+  margin-bottom: 25px;
+}
+
+.trailer__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
