@@ -87,6 +87,14 @@ ul li a{
   width:773px;
 }
 
+//margin pour chaque section
+.projects__title,
+.contentCreation__title,
+.trailer__title {
+  margin-top: 200px;
+}
+
+
 // PART 2
 
 .parttwo,
