@@ -102,6 +102,7 @@ ul li a{
   min-height: 791.58px;
   padding: 165px 75px;
   margin-bottom: 50px;
+  margin-top: 150px;
   margin-left: 2em;
 }
 
@@ -154,8 +155,6 @@ ul li a{
   height: 100%;
   object-fit: cover;
 
-  height: 100%;
-  object-fit: cover; /* set object-fit to cover */
 }
 
 //PART 3
