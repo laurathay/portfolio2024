@@ -128,6 +128,7 @@ ul li a{
 }
 
 .projects__container{
+  margin-bottom: 200px;
 
   display: flex;
   justify-content: space-between;
@@ -179,6 +180,8 @@ ul li a{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 200px;
+
 }
 
 .contentCreation__itemMedia img {
@@ -210,6 +213,8 @@ ul li a{
 
 .aboutme__description{
   padding: 0 0 0 9%;
+  margin-bottom: 200px;
+
 }
 
 /* Styles for page */ 
