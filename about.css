@@ -1,0 +1,48 @@
+//PART 4
+
+.aboutme {
+
+}
+
+.aboutme__container {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projects__title,
+.contentCreation__title,
+.trailer__title {
+  margin-top: 200px; 
+  padding-top: 200px;
+}
+
+.underline {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, transparent 0%, transparent 55%, #f28482 55%, rgba(21300,130,1) 100%);
+  
+    background-size: 100%;
+    color: black@;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    }
+
+.aboutme__item{
+    margin-bottom: 20px;
+}
+
+.aboutme__title{
+  margin-bottom: 20px;
+}
+
+.aboutme__description{
+  padding: 0 0 0 9%;
+  margin-bottom: 200px;
+
+}
+
+/* Styles for page */ 
+.container{ width: 70%; margin:150px auto;
+}
+$lightgrey: #dddddd;
+$textcolor:#4B4B4B;
