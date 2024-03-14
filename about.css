@@ -24,8 +24,9 @@
     background-size: 100%;
     color: black@;
     background-repeat: no-repeat;
-    font-size: 50px;
-    }
+    font-size: 150px;
+    width: 42%;
+}
 
 .aboutme__item{
     margin-bottom: 20px;
