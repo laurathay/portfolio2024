@@ -1,3 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,200&display=swap');
+
+:root {
+  --color-bg: #F5F5F5;
+}
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  background-color: #eee5e8;
+}
+
+h1{
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 78.94px;
+    color: #282828;
+  }
+  
+  p{
+    font-weight: 100;
+    size: 30px;
+    color: #282828;
+    line-height: 34px;
+  }
+  
+  li { list-style: none; }
+  
+  a {
+    background-color: transparent;
+    text-decoration: none;
+    color: darkgoldenrod;
+  }
+  header{
+    height: 69px;
+    border-bottom1px solid seashell;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header li {
+    margin-top: 35%;
+    margin-right: 35%;
+    font-weight: 100;
+    justify-content: flex-start;
+    
+    a{
+      color: black;
+    }
+  
+  }
+  
+  .logo{
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 20%;
+  }
+  
+  .menu {
+    display: flex;
+    color: grey;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+      justify-content: flex-start;
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: black;
+      font-weight: 400;
+  }
+  
+  .menu li { margin-right: 30px; }
+  
+  .headlines__intro {
+    font-size: 69px;
+    font-weight: 400;
+    line-height: 79px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 145px;
+    margin-left: 70px;
+    width:773px;
+  }
+    
+
 //PART 4
 
 .aboutme {
