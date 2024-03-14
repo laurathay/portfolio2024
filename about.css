@@ -4,6 +4,11 @@
 
 }
 
+.aboutmePosition {
+    text-align: left;
+    font-size: 50px;
+}
+
 .aboutme__container {
   display:flex;
   justify-content: space-between;
@@ -20,9 +25,9 @@
 .underline {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, transparent 0%, transparent 55%, #f28482 55%, rgba(21300,130,1) 100%);
-  
+
     background-size: 100%;
-    color: black@;
+    color: black;
     background-repeat: no-repeat;
     font-size: 150px;
     width: 42%;
