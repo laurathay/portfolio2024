@@ -121,6 +121,10 @@ h1{
     width: 42%;
 }
 
+.aboutme__borderbot{
+    border-bottom: 1px solid #000; 
+}
+
 .aboutme__item{
     margin-bottom: 20px;
 }
