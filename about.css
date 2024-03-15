@@ -123,8 +123,6 @@ h1{
 
 .aboutme__flex{
     display: flex;
-    align-items: bottom;
-    justify-content: center;
 }
 
 .aboutme__flexItem{
