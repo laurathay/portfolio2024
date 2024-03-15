@@ -121,6 +121,16 @@ h1{
     width: 42%;
 }
 
+.aboutme__flex{
+    display: flex;
+    align-items: bottom;
+    justify-content: center;
+}
+
+.aboutme__flexItem{
+    
+}
+
 .aboutme__borderbot{
     border-bottom: 1px solid #000; 
 }
