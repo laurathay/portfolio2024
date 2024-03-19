@@ -240,3 +240,7 @@ $textcolor:#4B4B4B;
   justify-content: center;
   align-items: center;
 }
+
+.trailer__description {
+  text-align: center;
+}
