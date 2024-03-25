@@ -33,7 +33,7 @@ h1{
   }
   header{
     height: 69px;
-    border-bottom1px solid seashell;
+    border-bottom :1px solid seashell;
     position: sticky;
     display: flex;
     justify-content: space-between;
@@ -130,12 +130,14 @@ h1{
 }
 
 .aboutme__flexItem{
-
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
 }
 
 .aboutme__borderbot{
     border-bottom: 1px solid #000; 
-    width: 500px;
+    min-width: 500px;
 }
 
 .freelance {
@@ -160,6 +162,12 @@ h1{
 .product{
     border-bottom: 1px solid #000;
     width: 700px;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
 }
 
 /* Styles for page */ 
