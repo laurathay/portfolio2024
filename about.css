@@ -152,10 +152,19 @@ h1{
   margin-bottom: 20px;
 }
 
+.aboutme__titlelanguage{
+  margin-right: 15px;
+
+}
+
 .aboutme__description{
   padding: 0 0 0 9%;
   margin-bottom: 100px;
 
+}
+
+.spacingLanguage{
+  margin-right: 250px;
 }
 
 .product{
