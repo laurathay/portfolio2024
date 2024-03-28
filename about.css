@@ -178,6 +178,14 @@ h1{
   align-items: start;
 }
 
+.flex {
+  display: flex;
+}
+
+.aboutme__descriptionhobby{
+  max-width: 500px;
+}
+
 /* Styles for page */ 
 .container{ width: 70%; margin:150px auto;
 }
