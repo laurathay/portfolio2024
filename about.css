@@ -141,7 +141,7 @@ h1{
 
 .freelance {
   border-bottom: 1px solid #000;
-  width: 672px;
+  width: 811px;
 }
 
 .aboutme__item{
@@ -160,6 +160,7 @@ h1{
 .aboutme__description{
   padding: 0 0 0 9%;
   margin-bottom: 100px;
+  line-height: 30px;
 
 }
 
@@ -169,8 +170,8 @@ h1{
 
 .product{
     border-bottom: 1px solid #000;
-    width: 700px;
-}
+    width: 735px;
+  }
 
 .flex-end {
   display: flex;
