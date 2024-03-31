@@ -4,7 +4,7 @@
   --color-bg: #F5F5F5;
 }
 
-main {
+main, header {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 22px;
   background-color: #eee5e8;
@@ -31,9 +31,7 @@ h1{
     text-decoration: none;
     color: darkgoldenrod;
   }
-  header{
-    height: 69px;
-    border-bottom1px solid seashell;
+  header{    
     position: sticky;
     display: flex;
     justify-content: space-between;
