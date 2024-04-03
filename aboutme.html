@@ -4,132 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <!-- Remixicon Icon -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+     <!-- Remixicon Icon -->
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- Main CSS -->
     <link rel="stylesheet" href="aboutme.css">
 </head>
 <body>
-    <!-- MAIN CONTAINER -->
-		<div id="main_container">
-            <!-- HEADER -->
-            <div id="header">
-              <!-- LOGOTYPE/NAME -->
-              <div class="header_logotype_container">
-                <h1 class="logotype_name">Javier <span class="purple">Latorre</span></h1>
-                <h2 class="logotype_occupation">Frontend Web Developer</h2>
-              </div>
-              <!-- MAIN MENU -->
-              <div class="header_menu_container">
-                <ul class="download_print_buttons horizontal_list">
-                  <li><a href="#"><span class="icon entypo-download"></span>Download CV</a></li>
-                  <li><a href="#"><span class="icon entypo-print"></span>Print CV</a></li>
-                </ul>
-                <div class="clear"></div>
-                <ul class="header_menu horizontal_list">
-                  <li><a class="no_border purple" href="#">Profile</a></li>
-                  <li><a href="#">Education</a></li>
-                  <li><a href="#">Skills</a></li>
-                  <li><a href="#">Work Experience</a></li>
-                  <li><a href="#">Featured Projects</a></li>
-                  <li><a href="#">Awards</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- LEFT COL -->
-            <div id="left_col">
-              <div class="profile_frame">
-                <div class="profile_picture"></div>
-                <!-- <img src="images/javier_latorre.jpg" alt="profile picture"> -->
-              </div>
-              <div class="hello_content">
-                <h2>Hello!</h2>
-                <p>I'm passionate about technology and human behavior, hardworker and a fast-learner with experience in around 10 different countries studying, working and volunteering.</p>
-              </div>
-              <div class="contact_details_content">
-                <h2>Contact details</h2>
-                <p class="purple">Phone:</p>
-                <p>+34 123 456 789</p>
-                <p class="purple">Email:</p>
-                <p>jlalovi@gmail.com</p>
-                <p class="purple">Adress:</p>
-                <p>Someplace, 5</p>
-                <p>Jaén, Spain</p>
-                <p>23001</p>
-              </div>
-              <a href="mailto:jlalovi@gmail.com" class="send_message_button">
-                <span class="cut1"></span>
-                <span class="cut2"></span>
-                <span class="content">Send me a message <span class="fontawesome-double-angle-right"></span></span>
-              </a>
-              <div class="get_social_content">
-                <h2>Get social</h2>
-                <ul class="social_icons horizontal_list">
-                  <li><a class="facebook" href="https://www.facebook.com/jlalovi"><span class="entypo-facebook-circled"></span><span class="invisible">Facebook</span></a></li>
-                  <li><a class="twitter" href="https://twitter.com/jlalovi"><span class="entypo-twitter-circled"></span><span class="invisible">Twitter</span></a></li>
-                  <li><a class="linkedin" href="https://www.linkedin.com/in/jlalovi/en"><span class="entypo-linkedin-circled"></span><span class="invisible">LinkedIn</span></a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- PROFILE CONTENT -->
-            <div id="content_container">				
-              <div class="block">
-                <h1>Profile</h1>
-                <blockquote class="profile_quote">
-                  <p>"There is no end to education. It is not that you read a book, pass an examination, and finish with education. The whole of life, from the moment you are born to the moment you die, is a process of learning."</p>
-                  <p>Jiddu Krishnamurti.</p>
-                  <span class="entypo-quote"></span>
-                </blockquote>
-              </div>
-              <div class="block">
-                <h2>A few words about me</h2>
-                <p>Until now, in my life, I change from active moments with a lot of variety, challenges and improvisations, to moments of tranquility and stability, being difficult to stay in a place during a long time. I consider myself a tolerant and respectful person with open mind and quite honest. I really like to listen people stories and backgrounds and their different experiences around the world.</p>				
-              </div>
-              <div class="horizontal_line">
-                <div class="line_left"></div>
-                <div class="left_circle"></div>
-                <div class="central_circle"></div>
-                <div class="right_circle"></div>
-                <div class="line_right"></div>
-              </div>
-              <div class="block">
-                <h2>Philosophy</h2>
-                <p>I belive in ethic and moral not in imposed rules that you "have to" do or follow.</p>
-                <div class="philosophy_content">
-                  <p>I believe life is made from different shades of grey, not from black and white. Furthermore, as a human being with rationality, I think it is our duty to take care of the world and treat others as one would like others to treat oneself. This way of perceiving reality affects my beliefs and my way of behaving. Summarizing on several points:</p>
-                  <ul>
-                    <li>Pragmatic</li>
-                    <li>Honest</li>
-                    <li>Respectful</li>
-                    <li>Open-minded</li>
-                    <li>Coherent</li>
-                  </ul>
-                  <div class="clear"></div>
+  <!-- banner -->
+  <div class="ds-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+          <figure>
+            <img src="assets/images/profile-image.jpg">
+          </figure>
+        </div>
+        <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+          <section>
+              <h1>
+                <span>HI THERE</span>
+                I’m Jason Stroff <br> UI/UX DESIGNER + DEVELOPER based in Florida.
+              </h1>
+              <ul class="ds-numbervalulist">
+                <li>
+                  <strong>6+</strong>
+                  <span>Experience</span>
+                </li>
+                <li>
+                  <strong>89</strong>
+                  <span>Projects</span>
+                </li>
+                <li>
+                  <strong>52</strong>
+                  <span>Happy Clients</span>
+                </li>
+              </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- banner -->
+
+  <!-- about -->
+  <div class="ds-about-section">
+    <div class="container">
+      <section>
+          <h2 class="ds-heading">About Me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum ante a porta blandit. Quisque velit tortor, ultricies in quam ut, luctus convallis metus. Nunc vitae felis rutrum, mattis justo quis, bibendum tellus. Integer bibendum eget dolor nec venenatis. Aliquam erat volutpat. Etiam et est vitae turpis accumsan vulputate. Curabitur et vehicula nisl, eu congue dolor. Vivamus nec hendrerit mi Nulla consequat tempor.</p>
+          <div class="ds-button-sec text-center">
+              <a href="#" class="ds-button">Download Resume</a>
+          </div>
+      </section>
+    </div>
+  </div>
+  <!-- about -->
+
+  <!--  Skills -->
+  <div class="ds-skills-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+           <h2 class="ds-heading">Core Skills</h2>
+           <ul class="ds-skills-list">
+             <li>JavaScript</li>
+             <li>Node.js</li>
+             <li>Express.js</li>
+             <li>MongoDB</li>
+             <li>Vue.js</li>
+             <li>React</li>
+             <li>Sequelize</li>
+             <li>Github</li>
+             <li>HTML</li>
+           </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <h2 class="ds-heading">Other Skills</h2>
+          <ul class="ds-skills-list">
+            <li>Storyblok</li>
+            <li>PWAs</li>
+            <li>Responsive Web Design</li>
+            <li>React</li>
+            <li>Vuetify</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  Skills -->
+
+ <!-- Experience -->
+ <div class="ds-experience-section">
+   <div class="container">
+      <h2 class="ds-heading">Work Experience</h2>
+      <div class="row ds-experience-list">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <section>
+              <span class="ds-year">2019 - Present</span>
+              <h3 class="ds-officename">Matrix Media Inc</h3>
+              <span class="ds-department">Full Stack developer</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              </ul>
+            </section>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <section>
+              <span class="ds-year">2018 - 2019</span>
+              <h3 class="ds-officename">Lexind</h3>
+              <span class="ds-department">Senior app developer</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+              </ul>
+            </section>
+          </div>
+      </div>
+   </div>
+ </div>
+  <!-- Experience -->
+
+ <!--  Work -->
+ <div class="ds-work-section">
+   <div class="container">
+        <h2 class="ds-heading">Latest works</h2>
+        <div class="ds-work-list-section">
+          <div class="ds-work-list">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                    <section>
+                        <h3 class="ds-work-tilte">Tripy mobile app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum nulla tellus, quis efficitur mauris tristique efficitur. Aliquam rhoncus sem sed ullamcorper venenatis. Aenean malesuada eu orci non sodales. </p>
+                        <a href="works-setails.html" class="ds-button">Details</a>
+                    </section>
                 </div>
-              </div>
-              <div class="horizontal_line">
-                <div class="line_left"></div>
-                <div class="left_circle"></div>
-                <div class="central_circle"></div>
-                <div class="right_circle"></div>
-                <div class="line_right"></div>
-              </div>
-              <div class="last block">
-                <h2>Interests & Hobbies</h2>
-                <p>I'm passionate about technology and human behavior, both determine almost all my interests and hobbies:</p>
-                <ul>
-                  <li>Visiting new places</li>
-                  <li>Meeting people</li>
-                  <li>Having new experiences</li>
-                  <li>Hiking and Biking</li>
-                  <li>Web Developing</li>
-                  <li>Computer Gamming</li>
-                  <li>Manga and Anime</li>
-                </ul>
-              </div>
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                    <figure><img src="assets/images/work-1.jpg"></figure>
+                </div>
             </div>
-            <div class="clear"></div>
-            <!-- FOOTER -->
-            <div id="footer">
-              <p class="footer_name">Javier Latorre CV 2015</p>
+          </div>
+          <div class="ds-work-list">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                    <section>
+                        <h3 class="ds-work-tilte">Hello mobile app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum nulla tellus, quis efficitur mauris tristique efficitur. Aliquam rhoncus sem sed ullamcorper venenatis. Aenean malesuada eu orci non sodales. </p>
+                        <a href="works-setails.html" class="ds-button">Details</a>
+                    </section>
+                </div>
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                    <figure><img src="assets/images/work-2.jpg"></figure>
+                </div>
             </div>
-              </div>
+          </div>
+          <div class="ds-work-list">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                    <section>
+                        <h3 class="ds-work-tilte">Cute cookies app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum nulla tellus, quis efficitur mauris tristique efficitur. Aliquam rhoncus sem sed ullamcorper venenatis. Aenean malesuada eu orci non sodales. </p>
+                        <a href="works-setails.html" class="ds-button">Details</a>
+                    </section>
+                </div>
+                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                     <figure><img src="assets/images/work-3.jpg"></figure>
+                </div>
+            </div>
+          </div>
+        </div>
+   </div>
+ </div>
+ <!--  Work -->
+
+ <!--  footer -->
+ <footer class="ds-footer text-center">
+   <div class="container">
+      <section>
+        <span>Stay in touch</span>
+        <h4>Ready to talk?</h4>
+        <p>Feel free to contact us</p>
+        <a href="mailto:test@test.com" class="ds-button">Lets Talk</a>
+      </section>
+      <span class="ds-copyright">© 2022 All rights reserved. Free minimal bootstrap template by <a href="https://designstub.com/" target="_blank">Designstub</a>.</span>
+   </div>
+ </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
