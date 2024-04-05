@@ -134,6 +134,10 @@ h1{
   align-items: start;
 }
 
+.aboutme__pic img{
+  width: 33%;
+}
+
 .aboutme__borderbot{
     border-bottom: 1px solid #000; 
     min-width: 500px;
