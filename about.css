@@ -16,11 +16,11 @@
 .ds-social li a{ display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; }
 .ds-social li a:hover{ background-color: #000; color: #FFF; }
 .ds-social li:before{ content:  ""; }
+.ds-social li{ margin-right:4rem; }
 
-*{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 22px;
-}
+html {font-family: 'Inter', sans-serif;background-color:#FFF}
+body {font-family: 'Inter', sans-serif;overflow-x: hidden; background-color:#FFF; font-weight:400;font-style: normal; color: #000; font-size: var(--font_14)}
+
 
 a {
     color: black;
