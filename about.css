@@ -15,8 +15,6 @@
 .ds-social li:first-child{ margin-left: 0; }
 .ds-social li a{ display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; }
 .ds-social li a:hover{ background-color: #000; color: #FFF; }
-.ds-social li:before{ content:  ""; }
-.ds-social li{ margin-right:4rem; }
 
 html {font-family: 'Inter', sans-serif;background-color:#FFF}
 body {font-family: 'Inter', sans-serif;overflow-x: hidden; background-color:#FFF; font-weight:400;font-style: normal; color: #000; font-size: var(--font_14)}
@@ -98,7 +96,7 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 .ds-experience-list p{ font-size: 16px; line-height: 24px; font-weight: 300; }
 .ds-experience-list ul{ list-style: none; padding: 0; margin: 0; padding-top: 10px; }
 .ds-experience-list ul li{font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;}
-.ds-experience-list ul li:before{ content: ""; position: absolute; left: 0; top: 10px; border-radius: 100%; width: 8px; height: 8px; background-color: #373737; }
+.ds-experience-list ul li:before{ position: absolute; left: 0; top: 10px; border-radius: 100%; width: 8px; height: 8px; background-color: #373737; }
 /*-----------------------------------------------------------------
   6. >>> Work Style
 ----------------------------------------------------------------*/
