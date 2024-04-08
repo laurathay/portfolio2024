@@ -121,7 +121,22 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 /*-----------------------------------------------------------------
   7. >>> Footer Style
 ----------------------------------------------------------------*/
+.ds-footer{ background-color: #FFF; padding:var(--margin-120) 0; }
+.ds-padding-0-about.ds-footer{ padding-top: 0 }
+.ds-lets_section h4{ color: #000;font-family: 'Inter', sans-serif; font-weight: 700; font-size:4.375rem; margin-bottom: 1.0625rem  }
+.ds-lets_section span{ color: #000; font-size:1.125rem;  }
 
+.ds-email_social{ display: flex; justify-content: space-between; align-items: center; padding:6.375rem 0; padding-bottom: 2.5rem }
+.ds-email{ color: #000; font-size: var(--font_30); font-weight: 600; display: inline-block; }
+.ds-email:hover{color: #000;}
+.ds-social{list-style: none; padding: 0; margin: 0; display: flex;}
+.ds-email_social .ds-social li{ margin-right:4rem; }
+.ds-social li:last-child{ margin-right: 0 }
+.ds-social a{ color: #797979; font-size: 2.5625rem; }
+.ds-social a:hover{ color: #000 }
+.ds-copyright{ display: block; text-align: right; color:#2B2B2B; font-size:1.125rem }
+.ds-copyright a{color:#2B2B2B;}
+.ds-copyright a:hover{color:#2B2B2B; text-decoration: underline;}
 
 
 
