@@ -87,7 +87,7 @@ svg,img { max-width: 100%; height: auto; }
 .ds-social li{ margin-left: 12px; }
 .ds-social li:first-child{ margin-left: 0; }
 .ds-social li a{ display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; }
-.ds-social li a:hover{ background-color: #000; color: #FFF; }
+.ds-social li a:hover{ color: #000; }
 .ds-social li:before{ content:  ""; }
 /*-----------------------------------------------------------------
   2. >>> Banner Style
