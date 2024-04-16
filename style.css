@@ -94,7 +94,7 @@ svg,img { max-width: 100%; height: auto; }
 ----------------------------------------------------------------*/
 .ds-banner-section{ text-align: left; margin-bottom: var(--margin-120);  }
 .ds-heading,.ds-heading-inner{ font-size: 4.375rem; line-height:6rem; margin-bottom:3.1875rem;}
-.ds-heading span{ border-bottom:15px solid #A6F3E7  }
+.ds-heading span{ border-bottom:15px solid #F26464;}
 
 
 .ds-banner-section figure{ margin-bottom: var(--margin-54) }
