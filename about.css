@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,200&display=swap');
 
+.ds-boder_text{ position: relative; display: inline-block; }
+.ds-boder_text span{ position: relative; z-index: 1 }
+.ds-boder_text:after{ content: ""; position: absolute; bottom: 0; left: 0; background-color:#F26464; height: 0.9375rem; width:100%;}
+
 /*-----------------------------------------------------------------
   1. >>> Headr Style
 ----------------------------------------------------------------*/

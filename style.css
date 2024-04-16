@@ -58,15 +58,15 @@ figure{ margin: 0 }
 svg,img { max-width: 100%; height: auto; }
 .ds-boder_text{ position: relative; display: inline-block; }
 .ds-boder_text span{ position: relative; z-index: 1 }
-.ds-boder_text:after{ content: ""; position: absolute; bottom: 0; left: 0; background-color:#A6F3E7; height: 0.9375rem; width:100%;}
+.ds-boder_text:after{ content: ""; position: absolute; bottom: 0; left: 0; background-color:#F26464; height: 0.9375rem; width:100%;}
 .margin-60{ margin-bottom: var(--margin-60);  }
 .padding-0{ padding-top: 0 }
 .ds-view-button{font-weight: 600; font-size: 1rem; color: #000}
 .ds-view-button i{ display: inline-block; vertical-align: middle; color: #00B7CC; font-size: 1.625rem; }
 .ds-view-button:hover{color: #00B7CC; }
 .text-left{ text-align: left; }
-.ds-arrow {background: #00B7CC;height:0.125rem;width:3.125rem;position: relative;cursor: pointer; display: inline-block; vertical-align: middle;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease; margin-left:0.5rem}
-.ds-arrow:before, .ds-arrow:after {content: "";background: #00B7CC;position: absolute;height:0.125rem;width:0.8125rem;}
+.ds-arrow {background: #F26464; height:0.125rem;width:3.125rem;position: relative;cursor: pointer; display: inline-block; vertical-align: middle;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease; margin-left:0.5rem}
+.ds-arrow:before, .ds-arrow:after {content: "";background: #F26464; position: absolute;height:0.125rem;width:0.8125rem;}
 .ds-arrow:before {right: -0.25rem;bottom: -0.25rem;transform: rotate(-45deg);}
 .ds-arrow:after {right: -0.25rem;top: -0.25rem;transform: rotate(45deg);}
 .ds-button-arrow:hover .ds-arrow{ margin-left:0.9375rem }
