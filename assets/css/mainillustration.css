@@ -46,32 +46,6 @@ h1,h2,h3,h4,h5,h6 {font-family: 'DM Serif Display', serif;}
 figure{ margin: 0 }
 svg,img { max-width: 100%; height: auto; }
 
-
-/*-----------------------------------------------------------------
-  1. >>> Headr Style
----------------------------------------------------*/
-
-.ds-header{ mposition: fixed; top: 0; width: 100%; z-index: 5; background-color: #FFF; padding: 70px 0;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease; }
-.ds-header.ds-fixed-header{ padding:20px 0;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); }
-.ds-header-inner{ display: flex; justify-content: space-between; align-items: center; }
-.ds-logo{ text-transform: uppercase; font-size: 18px; letter-spacing: 3px; color: #000; display: flex; align-items: center; }
-.ds-logo span{ display:flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #000; border-radius: 4px; color: #FFF; font-size: 22px; font-weight: 600; text-align: center; margin-right: 12px; }
-.ds-logo span{display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 0.9375rem}
-
-.ds-logo:hover{ color: #000; }
-
-.ds-social{ list-style: none; display: flex; align-items: center; flex-wrap: wrap; }
-.ds-social li{ margin-left: 12px; }
-.ds-social li:first-child{ margin-left: 0; }
-.ds-social li a{ display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; color: #797979; }
-.ds-social li a:hover{ color: #000; }
-.ds-social li:before{ content:  ""; }
-
-.logo{
-    height: 50px;
-    margin-left: 25px;
-    margin-top: 20%;
-  } 
 /*-----------------------------------------------------------------
   1. >>> Headr Style
 ----------------------------------------------------------------*/
@@ -126,35 +100,3 @@ svg,img { max-width: 100%; height: auto; }
 .ds-footer a{color: #000 }
 .ds-footer a:hover{color: #000; text-decoration: underline; }
 
-
-
-
-
-/*-------------------------------------------------------------------------------
- XS Style @media (max-width: 767px) 
--------------------------------------------------------------------------------*/
-@media (max-width: 767px) {
-
-	.ds-about-link-button{ position: static; margin-top: 1.25rem }
-	.ds-slider-section, .ds-main-section{ padding: 4.5rem 0 }
-	.ds-slider-loop{ padding-right: 20px }
-	.slick-arrow.slick-next{ right: 1% }
-	.ds-about-link-button span{ left: 0; right: 0; margin: 0 auto }
-	.ds-closebutton{ position: static; margin-top:1.25rem  }
-	.ds-about-section figure,.ds-about-section article{ width: 75% }
-	.ds-about-section figure{margin-bottom: 2.375rem;}
-	.ds-about-section article{padding-bottom: 1.125rem;}
-	.ds-project-section aside{ padding-right: 0 }
-	.ds-project-section{ padding:0 1.875rem  }
-	
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-
-}
