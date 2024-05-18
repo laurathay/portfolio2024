@@ -225,6 +225,7 @@ svg,img { max-width: 100%; height: auto; }
 }
 .cards .card img{
   width: 350px;
+  max-height: 350px;
 }
 .cards .card .card-header{
   display: flex;
