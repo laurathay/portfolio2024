@@ -203,6 +203,15 @@ svg,img { max-width: 100%; height: auto; }
 /* -------------------------------------------------------- */
 
 
+.tabList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabList ul li {
+  margin-left: 10px;
+}
 /* Section principale */
 
 .main{
