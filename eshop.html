@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grow High e-shop</title>
+  
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
 </head>
@@ -41,6 +42,38 @@
     <li>Monstera</li>
     <li>Pothos</li>
   </ul>
+</div>
+<div data-ui-tablist="ui-tabs" class="tabs">
+  <button data-ui-tablist-tab="log-in" class="tabs-tab">Log in</button>
+  <button data-ui-tablist-tab="sign-up" class="tabs-tab">Sign up</button>
+</div>
+<div id="log-in" class="tabs-tabpanel auth-form">
+  <label class="field-wrapper">
+    <span class="field-label">Email</span>
+    <input type="email" class="field field--white" value="name@domain.com" />
+  </label>
+  <label class="field-wrapper">
+    <span class="field-label">Password:</span>
+    <input type="password" class="field field--white" value="password" />
+  </label>
+  <div class="auth-form-footer">
+    <a href="#" class="auth-form-link">Forgot password</a>
+    <button class="btn btn--md btn--white">Log in</button>
+  </div>
+</div>
+<div id="sign-up" class="tabs-tabpanel auth-form" hidden>
+  <label class="field-wrapper">
+    <span class="field-label">Login or email</span>
+    <input type="text" class="field field--white" value="name@domain.com" />
+  </label>
+  <label class="field-wrapper">
+    <span class="field-label">Password:</span>
+    <input type="password" class="field field--white" value="password" />
+  </label>
+  <div class="auth-form-footer">
+    <a href="#" class="auth-form-link">I already have an account</a>
+    <button class="btn btn--md btn--white">Sign up</button>
+  </div>
 </div>
   <!-- Section principale -->
   <section class="main">
@@ -154,4 +187,10 @@
   </footer>
   <!-- footer -->
 </body>
+<script
+  src="https://cdn.jsdelivr.net/npm/jolty@0.5.1/dist/jolty.min.js"
+  integrity="sha384-GGnr6bw/937uydv7xI8pOAVtli3ah1ntI0MdwSBNYEU5ZszZKg8Dvp1GGx54VVVK"
+  crossorigin="anonymous"
+></script>
+<script src="js/joltytablist.js"></script>
 </html>
