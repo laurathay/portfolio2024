@@ -43,38 +43,51 @@
     <li>Pothos</li>
   </ul>
 </div>
-<div data-ui-tablist="ui-tabs" class="tabs">
-  <button data-ui-tablist-tab="log-in" class="tabs-tab">Log in</button>
-  <button data-ui-tablist-tab="sign-up" class="tabs-tab">Sign up</button>
-</div>
-<div id="log-in" class="tabs-tabpanel auth-form">
-  <label class="field-wrapper">
-    <span class="field-label">Email</span>
-    <input type="email" class="field field--white" value="name@domain.com" />
-  </label>
-  <label class="field-wrapper">
-    <span class="field-label">Password:</span>
-    <input type="password" class="field field--white" value="password" />
-  </label>
-  <div class="auth-form-footer">
-    <a href="#" class="auth-form-link">Forgot password</a>
-    <button class="btn btn--md btn--white">Log in</button>
+
+<div class="tabListMain">
+  <div class="navtabs">
+    <div class="navtab active" data-target="home">Home</div>
+    <div class="navtab" data-target="about">About</div>
+    <div class="navtab" data-target="contact">Contact</div>
+    <div class="navtab" data-target="page4">Page4</div>
+    <div class="navtab" data-target="page5">Page5</div>
+    <div class="navtab" data-target="page6">Page6</div>
+    <div class="navtab" data-target="page7">Page7</div>
+    <div class="underline"></div>
+  </div>
+
+  <div id="home" class="content active">
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the home section.</p>
+  </div>
+  <div id="about" class="content">
+    <h1>About Us</h1>
+    <p>This is the about section.</p>
+  </div>
+  <div id="contact" class="content">
+    <h1>Contact Us</h1>
+    <p>This is the contact section.</p>
+  </div>
+  <div id="page4" class="content">
+    <h1>Page 4</h1>
+    <p>This is the page 4 section.</p>
+  </div>
+  <div id="page5" class="content">
+    <h1>Page 5</h1>
+    <p>This is the page 5 section.</p>
+  </div>
+  <div id="page6" class="content">
+    <h1>Page 6</h1>
+    <p>This is the page 6 section.</p>
+  </div>
+  <div id="page7" class="content">
+    <h1>Page 7</h1>
+    <p>This is the page 7 section.</p>
   </div>
 </div>
-<div id="sign-up" class="tabs-tabpanel auth-form" hidden>
-  <label class="field-wrapper">
-    <span class="field-label">Login or email</span>
-    <input type="text" class="field field--white" value="name@domain.com" />
-  </label>
-  <label class="field-wrapper">
-    <span class="field-label">Password:</span>
-    <input type="password" class="field field--white" value="password" />
-  </label>
-  <div class="auth-form-footer">
-    <a href="#" class="auth-form-link">I already have an account</a>
-    <button class="btn btn--md btn--white">Sign up</button>
-  </div>
-</div>
+
+
+
   <!-- Section principale -->
   <section class="main">
     
