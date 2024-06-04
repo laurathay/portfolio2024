@@ -76,7 +76,7 @@ svg,img { max-width: 100%; height: auto; }
 /*-----------------------------------------------------------------
   1. >>> Headr Style
 ----------------------------------------------------------------*/
-.ds-header{ position: fixed; top: 0; width: 100%; z-index: 5; background-color: #FFF; padding: 50px 0;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease; }
+.ds-header{ position: fixed; top: 0; width: 100%; z-index: 5; background-color: transparent; padding: 50px 0;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease;}
 .ds-header.ds-fixed-header{ padding:20px 0;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); }
 .ds-header-inner{ display: flex; justify-content: space-between; align-items: center; }
 .ds-logo{ text-transform: uppercase; font-size: 18px; letter-spacing: 3px; color: #000; display: flex; align-items: center; }
@@ -86,12 +86,14 @@ svg,img { max-width: 100%; height: auto; }
 .ds-social{ list-style: none; display: flex; align-items: center; flex-wrap: wrap; }
 .ds-social li{ margin-left: 12px; }
 .ds-social li:first-child{ margin-left: 0; }
-.ds-social li a{ display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; }
+.ds-social li a{ display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; color: white;}
 .ds-social li a:hover{ color: #000; }
 .ds-social li:before{ content:  ""; }
 /*-----------------------------------------------------------------
   2. >>> Banner Style
 ----------------------------------------------------------------*/
+.banner {width: webkit-fill-available; height: 600px;background-image: url("./images/wegrowhigh.png"); background-size: cover;}
+
 .ds-banner-section{ margin-top: 250px; text-align: left; margin-bottom: var(--margin-120);  }
 .ds-heading,.ds-heading-inner{ font-size: 4.375rem; line-height:6rem; margin-bottom:3.1875rem;}
 .ds-heading span{ border-bottom:15px solid #F26464;}
