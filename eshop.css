@@ -92,7 +92,7 @@ svg,img { max-width: 100%; height: auto; }
 /*-----------------------------------------------------------------
   2. >>> Banner Style
 ----------------------------------------------------------------*/
-.banner {width: webkit-fill-available; height: 600px;background-image: url("./images/wegrowhigh.png"); background-size: cover;}
+.banner {width: -webkit-fill-available; height: 600px;background-image: url("./images/wegrowhigh.png"); background-size: cover;}
 
 .ds-banner-section{ margin-top: 250px; text-align: left; margin-bottom: var(--margin-120);  }
 .ds-heading,.ds-heading-inner{ font-size: 4.375rem; line-height:6rem; margin-bottom:3.1875rem;}
