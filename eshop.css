@@ -86,7 +86,7 @@ svg,img { max-width: 100%; height: auto; }
 .ds-social{ list-style: none; display: flex; align-items: center; flex-wrap: wrap; }
 .ds-social li{ margin-left: 12px; }
 .ds-social li:first-child{ margin-left: 0; }
-.ds-social li a{ display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; color: white;}
+.ds-social li a{ display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; color: #000;}
 .ds-social li a:hover{ color: #000; }
 .ds-social li:before{ content:  ""; }
 /*-----------------------------------------------------------------
