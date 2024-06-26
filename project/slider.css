@@ -1,206 +1,395 @@
-@layer base, rhythm, layout, components, default, overwrites;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
-html {
-  /* Create a snapping rule on the html element */
-  scroll-snap-type: y mandatory;
-
-  /* Create a timeline scope, so we can target any element on the page */
-  timeline-scope: --section, --main, --site-header;
+/* Common Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-/* We'll want to match these colors for the best melty effect */
-/* But play around with them (and add a color to section) to see happens */
-body,
-.content {
-  background-color: var(--color-background, black);
+img {
+  width: 100%;
+  height: auto;
 }
-
-main {
-  view-timeline: --main;
+body {
+  overflow: hidden !important;
 }
-
-.section {
-  /* Creating a snapping rule on the section element */
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-
-  /* Attach the timeline to the section element*/
-  view-timeline: --section;
-
-  /* Set each section to the full dynamic height of the viewport */
-  height: 100dvh;
+a:focus {
+  outline: none;
+  box-shadow: none;
 }
-
-.content {
-  /* Fix the content, so it doesn't scroll with the section */
-  overflow: hidden;
+input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+input:focus-visible {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+button:focus,
+:focus-visible {
+  outline: none;
+  border: none;
+}
+/* Root*/
+:root {
+  --pear-can: #e6ffde;
+  --pear-logo: #03403f;
+  --apple-can: #f2675a;
+  --apple-logo: #ec4458;
+  --exotic-can: #9590f1;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --exotic-logo: #6464ff;
+  --pear-background: #c9e78a;
+  --apple-background: #ffb2b2;
+  --exotic-background: #c1bff2;
+}
+/* Typography */
+h1 {
+  font-family: "Lexend";
+  font-size: 449px !important;
+  line-height: normal !important;
+  color: var(--white-color) !important;
+  margin: 0 !important;
+}
+h2 {
+  font-family: "Lexend";
+  font-size: 40px;
+  line-height: normal;
+  margin: 0;
+  font-weight: 900;
+}
+/* Header */
+header {
+  padding: 22px 28px 0;
   position: fixed;
-  inset: 0;
-
-  /* Animate the content based on the section scrolling */
-  --contrast: 4;
-  --blur: 0.5rem;
-
-  animation: blink ease-in-out both;
-  animation-timeline: --section;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+  text-align: center;
 }
-
-@keyframes blink {
-  0%,
-  100% {
-    filter: blur(var(--blur)) contrast(var(--contrast));
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  50% {
-    filter: blur(0) contrast(1);
-    opacity: 1;
-    visibility: visible;
-  }
+.logo {
+  color: var(--pear-logo);
 }
-
-/* 
-  This is a bit of a hack to get the indicator to work because I'm lazy.
-  We're translating the dot from the top to the bottom of its parent,
-  using the browser scroll position as the animation timeline.
-  It's not really matched up to the scrolling sections, only appears to be.
-*/
-.indicator::before {
-  animation: indicate linear both;
-  animation-timeline: --main;
-  animation-range: contain;
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-/* And we're manually setting the colors because see: lazy comment above */
-@keyframes indicate {
+/* Cane Image and Wrapper Image */
+.cane-image {
+  max-width: 265px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mask-image: url(https://www.yudiz.com/codepen/fruity/cane.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-size: 100% auto;
+  mask-size: 100% auto;
+  overflow: hidden;
+}
+.cane-image img {
+  width: 100%;
+}
+.cane-labels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300% !important;
+  mix-blend-mode: multiply;
+  transition: all ease-in-out 0.3s;
+}
+/*Fruits Images */
+.fruit-image {
+  opacity: 1;
+  position: absolute;
+}
+.image-one {
+  max-width: 282px;
+  bottom: 100px;
+}
+.image-two {
+  max-width: 247px;
+  top: 23%;
+  left: 25%;
+}
+.image-three {
+  max-width: 211px;
+  top: 23%;
+  right: 25%;
+}
+.image-four {
+  max-width: 294px;
+  bottom: 100px;
+  right: 0;
+}
+/* After */
+.fruit-image::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, #000 3.66%, rgba(0, 0, 0, 0) 92.35%);
+  opacity: 0.43;
+  filter: blur(7.5px);
+  transform: rotate(-6.941deg);
+  right: 0;
+  width: 173px;
+  height: 30px;
+}
+.image-one::after {
+  bottom: -50px;
+}
+.image-two::after {
+  bottom: -200px;
+  height: 22px;
+}
+.image-three::after {
+  bottom: -280px;
+  width: 103px;
+}
+.image-four::after {
+  bottom: -50px;
+}
+/*Section  */
+.section-container-main {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+.section-container {
+  width: 300vw;
+  display: flex;
+  position: relative;
+  transition: all ease-in-out 0.5s;
+  align-items: center;
+}
+.section {
+  min-width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  background: var(--pear-background);
+}
+.section:nth-child(2) {
+  background-color: var(--apple-background);
+}
+.section:nth-child(3) {
+  background-color: var(--exotic-background);
+}
+/* Add this to your CSS */
+/* Buttons */
+button {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  z-index: 99;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background-color: var(--white-color);
+  border: none;
+  font-size: 40px;
+  color: var(--apple-logo);
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+#prevButton {
+  left: 30px;
+  right: unset;
+  display: none;
+  transition: all ease-in 0.3s;
+}
+.wave {
+  animation: wave-apple-effect 4s linear infinite;
+  animation-direction: normal;
+}
+@keyframes wave-pear-effect {
   0% {
-    --color-indicator: var(--color-primary);
-    transform: translateY(0);
+    box-shadow: 0 0 0 0px var(--pear-background),
+      0 0 0 0px var(--pear-background);
   }
-
-  25% {
-    --color-indicator: var(--color-yellow);
+  40% {
+    box-shadow: 0 0 0 50px rgba(60, 41, 188, 0),
+      0 0 0 0px var(--pear-background);
   }
-
-  50% {
-    --color-indicator: var(--color-secondary);
+  80% {
+    box-shadow: 0 0 0 50px rgba(60, 41, 188, 0), 0 0 0 30px rgba(0, 0, 0, 0);
   }
-
-  75% {
-    --color-indicator: var(--color-red);
-  }
-
   100% {
-    --color-indicator: var(--color-purple);
-    transform: translateY(
-      calc(var(--indicator-total-height) - var(--indicator-size))
-    );
+    box-shadow: 0 0 0 0px rgba(60, 41, 188, 0), 0 0 0 30px rgba(0, 230, 118, 0);
   }
 }
-
-/* Remove gradient indicator on scroll-to-end (visible on small screens */
-
-.site-header label:last-of-type {
-  view-timeline: --site-header inline;
-}
-
-.site-header::after {
-  animation: fade-scroll ease-in-out both;
-  animation-timeline: --site-header;
-  animation-range: entry-crossing;
-}
-
-@keyframes fade-scroll {
+@keyframes wave-apple-effect {
   0% {
-    opacity: 1;
+    box-shadow: 0 0 0 0px var(--apple-background),
+      0 0 0 0px var(--apple-background);
   }
-
+  40% {
+    box-shadow: 0 0 0 50px rgba(60, 41, 188, 0),
+      0 0 0 0px var(--apple-background);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(60, 41, 188, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+  }
   100% {
-    opacity: 0;
+    box-shadow: 0 0 0 0px rgba(60, 41, 188, 0), 0 0 0 30px rgba(0, 230, 118, 0);
   }
 }
-
-/* Change animation based on radio checked */
-body:has([value="horizontal-scroll"]:checked) .content {
-  /* 
-    The only reason we're repeat these two properties instead of simply 
-    setting `animation-name` is so the polyfill will pick them up 
-    They're flaky though and tend to get stuck. You might need to
-    refresh the page and select an option before scrolling
-  */
-  animation: horizontal-scroll ease-in-out both;
-  animation-timeline: --section;
-}
-
-body:has([value="backwards-scroll"]:checked) .content {
-  animation: backwards-scroll ease-in-out both;
-  animation-timeline: --section;
-}
-
-body:has([value="zoom-scroll"]:checked) .content {
-  animation: zoom-scroll ease-in-out both;
-  animation-timeline: --section;
-}
-
-/* Alternative animations */
-/* Very cool, try it */
-@keyframes horizontal-scroll {
+@keyframes wave-exotic-effect {
   0% {
-    transform: translate3d(100%, 0%, 0);
+    box-shadow: 0 0 0 0px var(--exotic-background),
+      0 0 0 0px var(--exotic-background);
   }
-
-  50% {
-    transform: none;
+  40% {
+    box-shadow: 0 0 0 50px rgba(60, 41, 188, 0),
+      0 0 0 0px var(--exotic-background);
   }
-
+  80% {
+    box-shadow: 0 0 0 50px rgba(60, 41, 188, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+  }
   100% {
-    transform: translate3d(-100%, 0%, 0);
+    box-shadow: 0 0 0 0px rgba(60, 41, 188, 0), 0 0 0 30px rgba(0, 230, 118, 0);
   }
 }
-
-/* Befuddling, try it */
-@keyframes backwards-scroll {
-  0% {
-    transform: translate3d(0%, -100%, 0);
+/*.......... Responsive.............. */
+@media screen and (max-width: 1550px) {
+  h1 {
+    font-size: 350px !important;
   }
-
-  50% {
-    transform: none;
+  .cane-image {
+    max-width: 280px;
   }
-
-  100% {
-    transform: translate3d(0%, 100%, 0);
+  .image-one {
+    max-width: 250px;
   }
-}
-
-/* WIP */
-@keyframes zoom-scroll {
-  0% {
-    filter: blur(5rem);
-    transform: scale(0);
-    opacity: 0;
-    visibility: hidden;
+  .image-two {
+    max-width: 215px;
+    left: 22%;
+    top: 10%;
   }
-
-  50% {
-    filter: blur(0);
-    transform: none;
-    opacity: 1;
-    visibility: visible;
+  .image-three {
+    max-width: 180px;
   }
-
-  100% {
-    filter: blur(3rem);
-    transform: scale(1.5);
-    opacity: 0;
-    visibility: hidden;
+  .image-four {
+    max-width: 260px;
+    right: 40px;
   }
 }
-
-/* 
-  The actual page styling is in a different stylesheet to not clutter
-  this pen with irrelevant or confusing code
-
-  https://codepen.io/giana/pen/rNRzgRj
-*/
+@media screen and (max-width: 1199px) {
+  h1 {
+    font-size: 300px !important;
+  }
+  .cane-image::after {
+    width: 150%;
+  }
+  .image-one {
+    max-width: 220px;
+  }
+  .image-two {
+    max-width: 185px;
+    left: 18%;
+    top: 10%;
+  }
+  .image-three {
+    max-width: 180px;
+    right: 18%;
+  }
+  .image-four {
+    max-width: 230px;
+  }
+}
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 240px !important;
+  }
+  .cane-image {
+    max-width: 250px;
+  }
+  button {
+    height: 80px;
+    width: 80px;
+    top: 90%;
+  }
+  .image-one {
+    max-width: 180px;
+  }
+  .image-two {
+    max-width: 165px;
+    left: 12%;
+    top: 12%;
+  }
+  .image-three {
+    max-width: 150px;
+    right: 12%;
+  }
+  .image-four {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 180px !important;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .cane-image {
+    max-width: 180px;
+  }
+  button {
+    height: 60px;
+    width: 60px;
+    font-size: 20px;
+  }
+  .image-one {
+    max-width: 180px;
+    bottom: 150px;
+  }
+  .image-two {
+    max-width: 145px;
+    left: 12%;
+    top: 15%;
+  }
+  .image-three {
+    max-width: 130px;
+    right: 10%;
+  }
+  .image-four {
+    max-width: 180px;
+    bottom: 150px;
+  }
+}
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 100px !important;
+  }
+  .cane-image::after {
+    width: 100%;
+  }
+  .image-one {
+    max-width: 150px;
+  }
+  .image-two {
+    max-width: 115px;
+    left: 4%;
+    top: 18%;
+  }
+  .image-three {
+    max-width: 100px;
+    right: 4%;
+  }
+  .image-four {
+    max-width: 150px;
+    right: 0;
+  }
+}
