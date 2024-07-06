@@ -26,3 +26,8 @@ tabs.forEach(tab => {
 
 window.addEventListener('resize', updateUnderline);
 updateUnderline();
+
+function pageLoaded() {
+  document.querySelector("monstera").style.opacity = 1;
+}
+window.onload = pageLoaded;
